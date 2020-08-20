@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cac components trong bootstrap 4</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.css">
+</head>
+<!-- cac components -->
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">Bấm vào đây 
+                    <span class="spinner-border spinner-grow text-danger spinner-grow-sm"></span>
+                </button>
+                <div id="demo" class="collapse">
+                    Vui lòng thử lại!
+                </div>
+            </div>  
+            <div class="col-lg-4 col-md-4 col-sm-4">   
+                <div id="democollapse">
+                    <div class="card bg-danger text-white">
+                        <div class="card-header">
+                            <a href="#demo1" class="card-link" data-toggle="collapse">
+                                Truyện ngôn tình 1
+                            </a>
+                        </div>
+                        <div id="demo1" class="collapse" data-parent="#democollapse">
+                            <div class="card-body">
+                                Chả có chuyện ở đây để đọc
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-warning text-white">
+                        <div class="card-header">
+                            <a href="#demo2" class="card-link" data-toggle="collapse">
+                                Chuyện ngôn tình 2
+                            </a>
+                        </div>
+                        <div id="demo2" class="collapse show" data-parent="#democollapse">
+                            <div class="card-body">
+                                Chả có gì ở đây để đọc
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-success text-white">
+                        <div class="card-header">
+                            <a href="#demo3" class="card-link" data-toggle="collapse">
+                                Truyện ngôn tình 3
+                            </a>
+                        </div>
+                    
+                        <div id="demo3" class="collapse" data-parent="#democollapse">
+                            <div class="card-body">
+                                Chả có gì để đọc hết
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                
+            </div>
+        </div>
+    </div>
+<script src="jquery.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap4/js/bootstrap.js"></script>
+</body>
+</html>
