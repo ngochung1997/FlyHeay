@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cac components trong bootstrap 4</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.css">
+</head>
+<!-- cac components -->
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="toast" data-autohide="false">
+                    <div class="toast-header">
+                        <strong class="mr-auto text-primary"><img src="1.png" alt="icon" width="50px" height="50px">
+                            Bài viết mới</strong>
+                            <small class="text-muted">1 phút trước</small>
+                            <button class="ml-2 mb-1 close" type="button" data-dismiss="toast">&times;</button>
+                    </div>
+                    <div class="toast-body">
+                        Có một bài viết mới cần bạn xem duyệt
+                    </div>
+                </div>
+            </div>  
+            <div class="col-lg-4 col-md-4 col-sm-4">   
+                
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                
+            </div>
+        </div>
+    </div>
+<script src="jquery.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap4/js/bootstrap.js"></script>
+<script>
+    $(document).ready(function(){
+      $('.toast').toast('show');
+    });
+    </script>
+</body>
+</html>
